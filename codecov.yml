@@ -1,0 +1,56 @@
+coverage:
+  status:
+    project:
+      default: off
+      akita:
+        target: 80%
+        flags:
+          - akita
+      akita-ng-devtools:
+        target: off # project have no tests
+        flags:
+          - akita-ng-devtools
+      akita-ng-effects:
+        target: 80%
+        flags:
+          - akita-ng-effects
+      akita-ng-entity-service:
+        target: 80%
+        flags:
+          - akita-ng-entity-service
+      akita-ng-forms-manager:
+        target: 80%
+        flags:
+          - akita-ng-forms-manager
+      akita-ng-router-store:
+        target: 80%
+        flags:
+          - akita-ng-router-store
+      angular-store-app:
+        target: off # project have no tests
+        flags:
+          - angular-store-app
+
+# https://docs.codecov.io/docs/flags
+flags:
+  akita:
+    paths:
+      - libs/akita/src/lib/
+  akita-ng-devtools:
+    paths:
+      - libs/akita-ng-devtools/src/lib/
+  akita-ng-effects:
+    paths:
+      - libs/akita-ng-effects/src/lib/
+  akita-ng-entity-service:
+    paths:
+      - libs/akita-ng-entity-service/src/lib/
+  akita-ng-forms-manager:
+    paths:
+      - libs/akita-ng-forms-manager/src/lib/
+  akita-ng-router-store:
+    paths:
+      - libs/akita-ng-router-store/src/lib/
+  angular-store-app:
+    paths:
+      - apps/angular-store-app/src/app/
